@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{87998F0D-3BDA-4AC9-97C5-B063F9466B87}">
+  DTS:VersionBuild="50"
+  DTS:VersionGUID="{3CC16AB7-6BEB-4CCD-8AE9-9B25590EFA3F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1844,7 +1844,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F37DCC72-768E-4C0C-8CE9-25E31EA762E7}"
-          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda;&#xA;DELETE FROM CostosObra" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1887,6 +1887,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="158,42"
+          Id="Package\ETL - Costo obra"
+          TopLeft="205,283" />
+        <NodeLayout
           Size="174,42"
           Id="Package\ETL - Departamento"
           TopLeft="26,145" />
@@ -1898,40 +1902,6 @@
           Size="170,42"
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="173,52" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="217.5,94">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-104.5,51"
-              Start="0,0"
-              End="-104.5,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.5250965250965" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.5250965250965"
-                    Point2="0,17.5250965250965"
-                    Point3="-4,17.5250965250965" />
-                  <mssgle:LineSegment
-                    End="-100.5,17.5250965250965" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-100.5,17.5250965250965"
-                    Point2="-104.5,17.5250965250965"
-                    Point3="-104.5,21.5250965250965" />
-                  <mssgle:LineSegment
-                    End="-104.5,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="258,94">
@@ -1966,10 +1936,40 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
-          Id="Package\ETL - Costo obra"
-          TopLeft="205,283" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="217.5,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-104.5,51"
+              Start="0,0"
+              End="-104.5,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5250965250965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5250965250965"
+                    Point2="0,17.5250965250965"
+                    Point3="-4,17.5250965250965" />
+                  <mssgle:LineSegment
+                    End="-100.5,17.5250965250965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-100.5,17.5250965250965"
+                    Point2="-104.5,17.5250965250965"
+                    Point3="-104.5,21.5250965250965" />
+                  <mssgle:LineSegment
+                    End="-104.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="298.5,94">
@@ -2007,6 +2007,99 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\ETL - Costo obra">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\ETL - Costo obra\Origen de archivo plano"
+          TopLeft="435,106" />
+        <NodeLayout
+          Size="175,44"
+          Id="Package\ETL - Costo obra\Conversión de datos"
+          TopLeft="449,199" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\ETL - Costo obra\Destino de OLE DB"
+          TopLeft="472,320" />
+        <EdgeLayout
+          Id="Package\ETL - Costo obra.Paths[Salida de origen de archivo plano]"
+          TopLeft="533.5,148">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL - Costo obra.Paths[Salida de conversión de datos]"
+          TopLeft="536.5,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.5,77"
+              Start="0,0"
+              End="19.5,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="15.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.5,38.5"
+                    Point2="19.5,38.5"
+                    Point3="19.5,42.5" />
+                  <mssgle:LineSegment
+                    End="19.5,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL - Costo obra\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\ETL - Departamento">
     <LayoutInfo>
@@ -2088,7 +2181,11 @@
     design-time-name="Package\ETL - Vivienda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\ETL - Vivienda\Destino de OLE DB"
+          TopLeft="360,317" />
         <NodeLayout
           Size="184,42"
           Id="Package\ETL - Vivienda\Conversión de datos 1"
@@ -2116,13 +2213,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,42"
-          Id="Package\ETL - Vivienda\Destino de OLE DB"
-          TopLeft="360,317" />
         <EdgeLayout
           Id="Package\ETL - Vivienda.Paths[Salida de conversión de datos]"
           TopLeft="442.5,251">
@@ -2142,7 +2237,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2150,95 +2247,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ETL - Vivienda\Destino de OLE DB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\ETL - Costo obra">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="191,42"
-          Id="Package\ETL - Costo obra\Origen de archivo plano"
-          TopLeft="435,106" />
-        <NodeLayout
-          Size="175,44"
-          Id="Package\ETL - Costo obra\Conversión de datos"
-          TopLeft="449,199" />
-        <EdgeLayout
-          Id="Package\ETL - Costo obra.Paths[Salida de origen de archivo plano]"
-          TopLeft="533.5,148">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51"
-              Start="0,0"
-              End="0,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="168,42"
-          Id="Package\ETL - Costo obra\Destino de OLE DB"
-          TopLeft="472,320" />
-        <EdgeLayout
-          Id="Package\ETL - Costo obra.Paths[Salida de conversión de datos]"
-          TopLeft="536.5,243">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="19.5,77"
-              Start="0,0"
-              End="19.5,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="15.5,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="15.5,38.5"
-                    Point2="19.5,38.5"
-                    Point3="19.5,42.5" />
-                  <mssgle:LineSegment
-                    End="19.5,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\ETL - Costo obra\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
