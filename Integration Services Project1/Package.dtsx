@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{9DC83A2F-A6FA-4025-B9F1-DF87E972ABAD}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{FEEF0B92-A31F-4C62-9050-0E0F1A33C74E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -393,7 +393,12 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=ETLEmergencia;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F37DCC72-768E-4C0C-8CE9-25E31EA762E7}LocalHost.ETLEmergencia;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-JKJRTEE;User ID=sa;Initial Catalog=ETLEmergencia;Provider=SQLOLEDB.1;Auto Translate=False;Application Name=SSIS-Package-{F37DCC72-768E-4C0C-8CE9-25E31EA762E7}LocalHost.ETLEmergencia;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXQw4xyrN4ES0eUSq0LavMAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADyN12qW+jGYduTmyDRr0Dms8X8+BsFY5cMGzgCz5M0pwAAAAAOgAAAAAIAACAAAAD+QfbPyNgRNOlsePI4ETuKnDsbWNK2+Np2q9k18s2mTSAAAABqppvCAdrLCdLCf+Q5Ak8f8NvWxcT1wEyi/aeVgrYek0AAAADYFfcukECP0bXoi9xnJq5Jy8Jjrs/92TaHxm/OOMH8j2VfuhKGsnfDdWWMgyP7dXAXsOx5BXGOzmjmckOeihRA</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -479,35 +484,35 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CostosKey-source"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]" />
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]" />
                     <inputColumn
                       refId="Package\ETL - Costo obra\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MATERIALES CONSTRUCCION2-source]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="MATERIALES CONSTRUCCION2-source"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]" />
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]" />
                     <inputColumn
                       refId="Package\ETL - Costo obra\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[OBRAS DE EMERGENCIA-source]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="OBRAS DE EMERGENCIA-source"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]" />
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]" />
                     <inputColumn
                       refId="Package\ETL - Costo obra\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]" />
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]" />
                     <inputColumn
                       refId="Package\ETL - Costo obra\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[HORAS MAQUINA-source]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="HORAS MAQUINA-source"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]" />
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -533,7 +538,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -554,7 +559,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -575,7 +580,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -596,7 +601,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -617,7 +622,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -710,8 +715,8 @@
               <connections>
                 <connection
                   refId="Package\ETL - Costo obra\Destino de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.ETLEmergencia 4]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.ETLEmergencia 4]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -815,12 +820,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\ETL - Costo obra\Origen de archivo plano"
+              refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de archivo plano"
               localeId="9226"
-              name="Origen de archivo plano"
+              name="Origen de archivo plano Costo obra"
               usesDispositions="true"
               version="1">
               <properties>
@@ -835,25 +840,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\ETL - Costo obra\Origen de archivo plano.Connections[FlatFileConnection]"
+                  refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
                   connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 2]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano]"
                   name="Salida de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CostosKey]"
+                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[CostosKey]"
                       length="50"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CostosKey-source]"
                       name="CostosKey-source"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -868,14 +873,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[MATERIALES CONSTRUCCION2]"
+                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[MATERIALES CONSTRUCCION2]"
                       length="50"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[MATERIALES CONSTRUCCION2-source]"
                       name="MATERIALES CONSTRUCCION2-source"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -890,14 +895,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OBRAS DE EMERGENCIA]"
+                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[OBRAS DE EMERGENCIA]"
                       length="50"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[OBRAS DE EMERGENCIA-source]"
                       name="OBRAS DE EMERGENCIA-source"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -912,14 +917,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA]"
+                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA]"
                       length="50"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source]"
                       name="CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA-source"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -934,14 +939,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[HORAS MAQUINA]"
+                      externalMetadataColumnId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[HORAS MAQUINA]"
                       length="50"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].Columns[HORAS MAQUINA-source]"
                       name="HORAS MAQUINA-source"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -959,31 +964,31 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CostosKey]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[CostosKey]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CostosKey" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[MATERIALES CONSTRUCCION2]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[MATERIALES CONSTRUCCION2]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="MATERIALES CONSTRUCCION2" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[OBRAS DE EMERGENCIA]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[OBRAS DE EMERGENCIA]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="OBRAS DE EMERGENCIA" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CARROTANQUES - MOTOBOMBAS-PLANTA POTABILIZADORA" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[HORAS MAQUINA]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano].ExternalColumns[HORAS MAQUINA]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -991,27 +996,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano]"
                   isErrorOut="true"
                   name="Salida de error de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       codePage="1252"
                       dataType="text"
                       description="Columna de salida de error de origen de archivo plano"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       name="Columna de salida de error de origen de archivo plano" />
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      refId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      lineageId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1030,7 +1035,7 @@
               refId="Package\ETL - Costo obra.Paths[Salida de origen de archivo plano]"
               endId="Package\ETL - Costo obra\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de archivo plano"
-              startId="Package\ETL - Costo obra\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+              startId="Package\ETL - Costo obra\Origen de archivo plano Costo obra.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2890,10 +2895,10 @@
     design-time-name="Package\ETL - Costo obra">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="191,42"
-          Id="Package\ETL - Costo obra\Origen de archivo plano"
+          Size="245,42"
+          Id="Package\ETL - Costo obra\Origen de archivo plano Costo obra"
           TopLeft="435,106" />
         <NodeLayout
           Size="175,44"
@@ -2905,26 +2910,36 @@
           TopLeft="472,320" />
         <EdgeLayout
           Id="Package\ETL - Costo obra.Paths[Salida de origen de archivo plano]"
-          TopLeft="533.5,148">
+          TopLeft="557.5,148">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51"
+              EndConnector="-21,51"
               Start="0,0"
-              End="0,43.5">
+              End="-21,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.5" />
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="-4,25.5" />
+                  <mssgle:LineSegment
+                    End="-17,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17,25.5"
+                    Point2="-21,25.5"
+                    Point3="-21,29.5" />
+                  <mssgle:LineSegment
+                    End="-21,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2958,9 +2973,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
