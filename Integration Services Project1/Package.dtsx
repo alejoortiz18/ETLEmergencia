@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{3CC16AB7-6BEB-4CCD-8AE9-9B25590EFA3F}">
+  DTS:VersionBuild="60"
+  DTS:VersionGUID="{9DC83A2F-A6FA-4025-B9F1-DF87E972ABAD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -180,6 +180,183 @@
               DTS:TextQualified="True"
               DTS:ObjectName="HORAS MAQUINA"
               DTS:DTSID="{3D5B058B-7855-40D0-9910-4A5422C4C15E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0BE8C8E2-A625-439D-AFA8-6D8AB5BB4BAA}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\TdeA\Semestre 8\bases de datos avanzados\Archivos de emergencias\Vivienda.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ViviendaKey"
+              DTS:DTSID="{466DB5AC-D78B-4D2E-8E96-6C18248EE653}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VIVIENDAS DESTRUIDAS"
+              DTS:DTSID="{9D04A9B5-F7B9-45A8-95ED-DDE42D405D03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VIVIENDAS AVERIADAS"
+              DTS:DTSID="{F03936E8-C362-4479-981F-3C0FA3C12A61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VIAS AVERIADAS"
+              DTS:DTSID="{8F3116D4-9BD3-45D4-9C56-753116A32299}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A1B5A8D7-08CD-4D92-9DB6-BAAE2113E7A8}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\TdeA\Semestre 8\bases de datos avanzados\Archivos de emergencias\Departamento.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="key"
+              DTS:DTSID="{89041B32-43B8-44A5-87BB-843413D2CB55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEPARTAMENTO"
+              DTS:DTSID="{0127F9F0-CFEB-4E7F-AB3F-BCD64D2DE1DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MUNICIPIO"
+              DTS:DTSID="{8DB8E23B-23AF-49D3-9D48-BA570FDF094F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 5]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{96275906-3DB9-4050-9527-51F7D904762D}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\TdeA\Semestre 8\bases de datos avanzados\Archivos de emergencias\Personas.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PersonaKey"
+              DTS:DTSID="{4E0B8990-CB28-4649-80FF-C39E028ED54C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FALLECIDOS"
+              DTS:DTSID="{42A23FF8-1C81-4066-9400-0727171AFB91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HERIDOS"
+              DTS:DTSID="{B1981658-DAD4-4E67-AD81-62FBA9BEF4BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESAPARECIDOS"
+              DTS:DTSID="{7214326A-F429-4BB8-A5FE-B23EE37FF3ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERSONAS"
+              DTS:DTSID="{9E130D70-279F-41ED-81E5-766D3A068E9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FAMILIAS"
+              DTS:DTSID="{62DF5FB3-F877-484B-8184-1E39331A3A26}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1007,11 +1184,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\ETL - Departamento\Destino de OLE DB"
+              refId="Package\ETL - Departamento\Destino TlbDepartamento BD"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB"
+              name="Destino TlbDepartamento BD"
               usesDispositions="true"
               version="4">
               <properties>
@@ -1064,7 +1241,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\ETL - Departamento\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1072,48 +1249,48 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[KEY-source - Convert]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].Columns[KEY-source - Convert]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="KEY-source - Convert"
-                      externalMetadataColumnId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[IdDepartamento]"
+                      externalMetadataColumnId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[IdDepartamento]"
                       lineageId="Package\ETL - Departamento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[KEY-source - Convert]" />
                     <inputColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[DEPARTAMENTO-source- Convert]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].Columns[DEPARTAMENTO-source- Convert]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="DEPARTAMENTO-source- Convert"
-                      externalMetadataColumnId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
+                      externalMetadataColumnId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
                       lineageId="Package\ETL - Departamento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DEPARTAMENTO-source- Convert]" />
                     <inputColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[MUNICIPIO-source - Convert]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].Columns[MUNICIPIO-source - Convert]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="MUNICIPIO-source - Convert"
-                      externalMetadataColumnId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Municipio]"
+                      externalMetadataColumnId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[Municipio]"
                       lineageId="Package\ETL - Departamento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[MUNICIPIO-source - Convert]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[IdDepartamento]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[IdDepartamento]"
                       dataType="wstr"
                       length="100"
                       name="IdDepartamento" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
                       dataType="wstr"
                       length="100"
                       name="Departamento" />
                     <externalMetadataColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Municipio]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB].ExternalColumns[Municipio]"
                       dataType="wstr"
                       length="100"
                       name="Municipio" />
@@ -1122,22 +1299,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\ETL - Departamento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ETL - Departamento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\ETL - Departamento\Destino TlbDepartamento BD.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ETL - Departamento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\ETL - Departamento\Destino TlbDepartamento BD.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ETL - Departamento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\ETL - Departamento\Destino TlbDepartamento BD.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1167,8 +1344,8 @@
               <connections>
                 <connection
                   refId="Package\ETL - Departamento\Origen de archivo Departamento.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 4]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1298,7 +1475,7 @@
           <paths>
             <path
               refId="Package\ETL - Departamento.Paths[Salida de conversión de datos]"
-              endId="Package\ETL - Departamento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\ETL - Departamento\Destino TlbDepartamento BD.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
               startId="Package\ETL - Departamento\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
@@ -1306,6 +1483,662 @@
               endId="Package\ETL - Departamento\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de archivo plano"
               startId="Package\ETL - Departamento\Origen de archivo Departamento.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ETL - Persona"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{D2A3E8D1-372C-4139-ABEC-5DDC1F95E9C2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL - Persona"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL - Persona\Conversión de datos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[PersonaKey-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PersonaKey-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[FALLECIDOS-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FALLECIDOS-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FALLECIDOS-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[HERIDOS-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HERIDOS-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[HERIDOS-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[DESAPARECIDOS-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DESAPARECIDOS-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[DESAPARECIDOS-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[PERSONAS-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PERSONAS-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PERSONAS-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[FAMILIAS-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FAMILIAS-source"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FAMILIAS-source]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]"
+                      name="PersonaKey-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FALLECIDOS-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FALLECIDOS-convert]"
+                      name="FALLECIDOS-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FALLECIDOS-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[HERIDOS-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[HERIDOS-convert]"
+                      name="HERIDOS-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[HERIDOS-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DESAPARECIDOS-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DESAPARECIDOS-convert]"
+                      name="DESAPARECIDOS-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[DESAPARECIDOS-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PERSONAS-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PERSONAS-convert]"
+                      name="PERSONAS-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PERSONAS-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FAMILIAS-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FAMILIAS-convert]"
+                      name="FAMILIAS-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FAMILIAS-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL - Persona\Destino de OLE DB Persona"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB Persona"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Persona]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Persona\Destino de OLE DB Persona.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[PersonaKey-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PersonaKey-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[PersonaKey]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[FALLECIDOS-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FALLECIDOS-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[FALLECIDOS]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FALLECIDOS-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[HERIDOS-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="HERIDOS-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[HERIDOS]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[HERIDOS-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[DESAPARECIDOS-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DESAPARECIDOS-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[DESAPARECIDOS]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DESAPARECIDOS-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[PERSONAS-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PERSONAS-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[PERSONAS]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PERSONAS-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].Columns[FAMILIAS-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FAMILIAS-convert"
+                      externalMetadataColumnId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[FAMILIAS]"
+                      lineageId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FAMILIAS-convert]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[PersonaKey]"
+                      dataType="wstr"
+                      length="100"
+                      name="PersonaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[FALLECIDOS]"
+                      dataType="wstr"
+                      length="100"
+                      name="FALLECIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[HERIDOS]"
+                      dataType="wstr"
+                      length="100"
+                      name="HERIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[DESAPARECIDOS]"
+                      dataType="wstr"
+                      length="100"
+                      name="DESAPARECIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[PERSONAS]"
+                      dataType="wstr"
+                      length="100"
+                      name="PERSONAS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB].ExternalColumns[FAMILIAS]"
+                      dataType="wstr"
+                      length="100"
+                      name="FAMILIAS" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL - Persona\Destino de OLE DB Persona.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Destino de OLE DB Persona.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Persona\Destino de OLE DB Persona.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Destino de OLE DB Persona.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL - Persona\Origen de archivo plano Persona"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="9226"
+              name="Origen de archivo plano Persona"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Persona\Origen de archivo plano Persona.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 5]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[PersonaKey]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]"
+                      name="PersonaKey-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FALLECIDOS-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[FALLECIDOS]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FALLECIDOS-source]"
+                      name="FALLECIDOS-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[HERIDOS-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[HERIDOS]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[HERIDOS-source]"
+                      name="HERIDOS-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[DESAPARECIDOS-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[DESAPARECIDOS]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[DESAPARECIDOS-source]"
+                      name="DESAPARECIDOS-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PERSONAS-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[PERSONAS]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[PERSONAS-source]"
+                      name="PERSONAS-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FAMILIAS-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[FAMILIAS]"
+                      length="50"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].Columns[FAMILIAS-source]"
+                      name="FAMILIAS-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[PersonaKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PersonaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[FALLECIDOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FALLECIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[HERIDOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HERIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[DESAPARECIDOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DESAPARECIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[PERSONAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PERSONAS" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano].ExternalColumns[FAMILIAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FAMILIAS" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL - Persona.Paths[Salida de conversión de datos]"
+              endId="Package\ETL - Persona\Destino de OLE DB Persona.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\ETL - Persona\Conversión de datos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\ETL - Persona.Paths[Salida de origen de archivo plano]"
+              endId="Package\ETL - Persona\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de archivo plano"
+              startId="Package\ETL - Persona\Origen de archivo plano Persona.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1545,8 +2378,8 @@
               <connections>
                 <connection
                   refId="Package\ETL - Vivienda\Destino de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.ETLEmergencia 3]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.ETLEmergencia 3]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -1659,8 +2492,8 @@
               <connections>
                 <connection
                   refId="Package\ETL - Vivienda\Origen de archivo Vivienda.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 3]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1831,20 +2664,20 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:refId="Package\Tarea Limpar tablas SQL"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
       DTS:DTSID="{87176E81-77B9-478D-AEF1-563B465E17E4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:ObjectName="Tarea Limpar tablas SQL"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F37DCC72-768E-4C0C-8CE9-25E31EA762E7}"
-          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda;&#xA;DELETE FROM CostosObra" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda;&#xA;DELETE FROM CostosObra;&#xA;DELETE FROM Persona" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -1853,7 +2686,7 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{5F256069-6F6F-4E24-9F5C-FF672F063AF0}"
-      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:From="Package\Tarea Limpar tablas SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
       DTS:To="Package\ETL - Vivienda" />
@@ -1861,7 +2694,7 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
       DTS:DTSID="{8EF63160-1E5D-42A2-92DF-0A4CD890C616}"
-      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:From="Package\Tarea Limpar tablas SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
       DTS:To="Package\ETL - Departamento" />
@@ -1869,10 +2702,18 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
       DTS:DTSID="{1BD6902F-4827-4C2C-B32B-4ACE8D2CFFF6}"
-      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:From="Package\Tarea Limpar tablas SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
       DTS:To="Package\ETL - Costo obra" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{2A18025E-1A1A-44DA-BE25-60C69C4CBE08}"
+      DTS:From="Package\Tarea Limpar tablas SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\ETL - Persona" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -1885,7 +2726,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\ETL - Costo obra"
@@ -1893,24 +2734,24 @@
         <NodeLayout
           Size="174,42"
           Id="Package\ETL - Departamento"
-          TopLeft="26,145" />
+          TopLeft="27,144" />
         <NodeLayout
           Size="147,42"
           Id="Package\ETL - Vivienda"
           TopLeft="129,207" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Tarea Ejecutar SQL"
+          Size="195,42"
+          Id="Package\Tarea Limpar tablas SQL"
           TopLeft="173,52" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="258,94">
+          TopLeft="270.5,94">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-55.5,113"
+              EndConnector="-68,113"
               Start="0,0"
-              End="-55.5,105.5">
+              End="-68,105.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1921,13 +2762,13 @@
                     Point2="0,56.5"
                     Point3="-4,56.5" />
                   <mssgle:LineSegment
-                    End="-51.5,56.5" />
+                    End="-64,56.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-51.5,56.5"
-                    Point2="-55.5,56.5"
-                    Point3="-55.5,60.5" />
+                    Point1="-64,56.5"
+                    Point2="-68,56.5"
+                    Point3="-68,60.5" />
                   <mssgle:LineSegment
-                    End="-55.5,105.5" />
+                    End="-68,105.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1938,30 +2779,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="217.5,94">
+          TopLeft="214.4,94">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-104.5,51"
+              EndConnector="-100.4,50"
               Start="0,0"
-              End="-104.5,43.5">
+              End="-100.4,42.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.5250965250965" />
+                    End="0,10.902807775378" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.5250965250965"
-                    Point2="0,17.5250965250965"
-                    Point3="-4,17.5250965250965" />
+                    Point1="0,10.902807775378"
+                    Point2="0,14.902807775378"
+                    Point3="-4,14.902807775378" />
                   <mssgle:LineSegment
-                    End="-100.5,17.5250965250965" />
+                    End="-96.4,14.902807775378" />
                   <mssgle:CubicBezierSegment
-                    Point1="-100.5,17.5250965250965"
-                    Point2="-104.5,17.5250965250965"
-                    Point3="-104.5,21.5250965250965" />
+                    Point1="-96.4,14.902807775378"
+                    Point2="-100.4,14.902807775378"
+                    Point3="-100.4,18.902807775378" />
                   <mssgle:LineSegment
-                    End="-104.5,43.5" />
+                    End="-100.4,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1972,30 +2813,68 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="298.5,94">
+          TopLeft="317.25,94">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.5,189"
+              EndConnector="-33.25,189"
               Start="0,0"
-              End="-14.5,181.5">
+              End="-33.25,181.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.945945945946" />
+                    End="0,60.6998313659359" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,60.945945945946"
-                    Point2="0,64.945945945946"
-                    Point3="-4,64.945945945946" />
+                    Point1="0,60.6998313659359"
+                    Point2="0,64.6998313659359"
+                    Point3="-4,64.6998313659359" />
                   <mssgle:LineSegment
-                    End="-10.5,64.945945945946" />
+                    End="-29.25,64.6998313659359" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.5,64.945945945946"
-                    Point2="-14.5,64.945945945946"
-                    Point3="-14.5,68.945945945946" />
+                    Point1="-29.25,64.6998313659359"
+                    Point2="-33.25,64.6998313659359"
+                    Point3="-33.25,68.6998313659359" />
                   <mssgle:LineSegment
-                    End="-14.5,181.5" />
+                    End="-33.25,181.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="145,42"
+          Id="Package\ETL - Persona"
+          TopLeft="323,348" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="326.6,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68.9,254"
+              Start="0,0"
+              End="68.9,246.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.7062634989201" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71.7062634989201"
+                    Point2="0,75.7062634989201"
+                    Point3="4,75.7062634989201" />
+                  <mssgle:LineSegment
+                    End="64.9,75.7062634989201" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64.9,75.7062634989201"
+                    Point2="68.9,75.7062634989201"
+                    Point3="68.9,79.7062634989201" />
+                  <mssgle:LineSegment
+                    End="68.9,246.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2106,20 +2985,20 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175,42"
-          Id="Package\ETL - Departamento\Destino de OLE DB"
-          TopLeft="395,362" />
+          Size="216,42"
+          Id="Package\ETL - Departamento\Destino TlbDepartamento BD"
+          TopLeft="234,305" />
         <NodeLayout
           Size="180,42"
           Id="Package\ETL - Departamento\Conversión de datos"
-          TopLeft="393,247" />
+          TopLeft="232,190" />
         <NodeLayout
           Size="233,42"
           Id="Package\ETL - Departamento\Origen de archivo Departamento"
-          TopLeft="365,131" />
+          TopLeft="204,74" />
         <EdgeLayout
           Id="Package\ETL - Departamento.Paths[Salida de origen de archivo plano]"
-          TopLeft="482.25,173">
+          TopLeft="321.25,116">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2141,18 +3020,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL - Departamento.Paths[Salida de conversión de datos]"
-          TopLeft="482.75,289">
+          TopLeft="322,232">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,73"
+              EndConnector="20,73"
               Start="0,0"
-              End="0,65.5">
+              End="20,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.5" />
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
+                  <mssgle:LineSegment
+                    End="16,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16,36.5"
+                    Point2="20,36.5"
+                    Point3="20,40.5" />
+                  <mssgle:LineSegment
+                    End="20,65.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2165,7 +3056,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ETL - Departamento\Destino de OLE DB">
+    design-time-name="Package\ETL - Departamento\Destino TlbDepartamento BD">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2181,7 +3072,7 @@
     design-time-name="Package\ETL - Vivienda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="168,42"
           Id="Package\ETL - Vivienda\Destino de OLE DB"
@@ -2213,9 +3104,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2237,9 +3126,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2247,6 +3134,107 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ETL - Vivienda\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ETL - Persona">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="232,42"
+          Id="Package\ETL - Persona\Origen de archivo plano Persona"
+          TopLeft="364,184" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\ETL - Persona\Conversión de datos"
+          TopLeft="401,288" />
+        <EdgeLayout
+          Id="Package\ETL - Persona.Paths[Salida de origen de archivo plano]"
+          TopLeft="480,226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,62"
+              Start="0,0"
+              End="8.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="4.5,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,31"
+                    Point2="8.5,31"
+                    Point3="8.5,35" />
+                  <mssgle:LineSegment
+                    End="8.5,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="209,42"
+          Id="Package\ETL - Persona\Destino de OLE DB Persona"
+          TopLeft="362,385" />
+        <EdgeLayout
+          Id="Package\ETL - Persona.Paths[Salida de conversión de datos]"
+          TopLeft="488.5,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22,55"
+              Start="0,0"
+              End="-22,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
+                  <mssgle:LineSegment
+                    End="-18,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18,27.5"
+                    Point2="-22,27.5"
+                    Point3="-22,31.5" />
+                  <mssgle:LineSegment
+                    End="-22,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL - Persona\Destino de OLE DB Persona">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
