@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{FEEF0B92-A31F-4C62-9050-0E0F1A33C74E}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{1BA9559A-8246-4235-A7D0-60DC979B9FD4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -363,6 +363,154 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 6]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{85489E13-F4A9-435B-848E-1A4D86332063}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\TdeA\Semestre 8\bases de datos avanzados\Archivos de emergencias\Emergencias.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHAKEY"
+              DTS:DTSID="{F40DBB86-0D73-42FC-B87E-4DA18D429D00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CostoKey"
+              DTS:DTSID="{7576E204-3740-4244-BB95-67BA2CA79563}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepartamentoKey"
+              DTS:DTSID="{2338A7E3-66D7-400D-8732-7DD796EDDA1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ViviendaKey"
+              DTS:DTSID="{38074FFE-0DBE-4D25-B54B-C7E50C53E765}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PersonaKey"
+              DTS:DTSID="{10DD96AF-034F-44C3-AD46-2D9F0AF852CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EVENTO"
+              DTS:DTSID="{8D00D590-B7CE-434B-A6F3-CAEF592A633B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 7]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CF710BBE-D867-4884-9080-EEAF06AAF7AB}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\TdeA\Semestre 8\bases de datos avanzados\Archivos de emergencias\Emergencias.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHAKEY"
+              DTS:DTSID="{AC27C8ED-0E94-4A70-9AF2-09880D889A63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CostoKey"
+              DTS:DTSID="{EFDCBFC1-3ACA-4B05-BA8A-88B5155D773E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DepartamentoKey"
+              DTS:DTSID="{FD9643C8-86C8-464B-AC48-AE2BBCCA6FE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ViviendaKey"
+              DTS:DTSID="{3A0B39AA-1297-4B03-8000-3930CA2EF21F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PersonaKey"
+              DTS:DTSID="{01EB2A60-9872-4420-8C38-576BF5FC1EF4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EVENTO"
+              DTS:DTSID="{88692762-1C52-420C-90EE-FAFDE74BE589}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{DF63C425-7640-4791-8785-A885C925B16E}"
@@ -397,7 +545,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXQw4xyrN4ES0eUSq0LavMAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADyN12qW+jGYduTmyDRr0Dms8X8+BsFY5cMGzgCz5M0pwAAAAAOgAAAAAIAACAAAAD+QfbPyNgRNOlsePI4ETuKnDsbWNK2+Np2q9k18s2mTSAAAABqppvCAdrLCdLCf+Q5Ak8f8NvWxcT1wEyi/aeVgrYek0AAAADYFfcukECP0bXoi9xnJq5Jy8Jjrs/92TaHxm/OOMH8j2VfuhKGsnfDdWWMgyP7dXAXsOx5BXGOzmjmckOeihRA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXQw4xyrN4ES0eUSq0LavMAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACWdcBt4a3Ns9XTzx9MRkwgfV4M8XyNVoOXBV2FL9N8UQAAAAAOgAAAAAIAACAAAAAP209lRvtkCicGgt9LsD/lGXfDKZJQ4qKk0ptijDEEoyAAAADt8Zbz7us/FidYKwh10AHnQf2dG3wy/1zm7ZDJNSFpqUAAAABqtxLkxOtLzSFoyzdSpmDaILaYmvn2av266oUgyMR530WAlJpAVLNtX38EwJaxYFvvPV7G3Ih4x5bxg+t3oVzi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1488,6 +1636,662 @@
               endId="Package\ETL - Departamento\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de archivo plano"
               startId="Package\ETL - Departamento\Origen de archivo Departamento.Outputs[Salida de origen de archivo plano]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ETL - Emergencia"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{B23EA451-8BFB-47BE-8838-36969C1AC436}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL - Emergencia"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL - Emergencia\Conversión de datos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[FECHAKEY-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FECHAKEY-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[FECHAKEY-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CostoKey-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CostoKey-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[CostoKey-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[DepartamentoKey-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DepartamentoKey-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[DepartamentoKey-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ViviendaKey-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ViviendaKey-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[ViviendaKey-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[PersonaKey-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PersonaKey-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[EVENTO-source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EVENTO-source"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[EVENTO-source]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FECHAKEY-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FECHAKEY-convert]"
+                      name="FECHAKEY-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[FECHAKEY-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[CostoKey-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[CostoKey-convert]"
+                      name="CostoKey-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[CostoKey-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DepartamentoKey-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DepartamentoKey-convert]"
+                      name="DepartamentoKey-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[DepartamentoKey-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[ViviendaKey-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[ViviendaKey-convert]"
+                      name="ViviendaKey-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[ViviendaKey-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]"
+                      name="PersonaKey-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[EVENTO-convert]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[EVENTO-convert]"
+                      name="EVENTO-convert"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[EVENTO-source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB Emergencia"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Emergencia]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-6GG8EI8\SQLEXPRESS]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[FECHAKEY-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FECHAKEY-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHAKEY]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[FECHAKEY-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[CostoKey-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="CostoKey-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[CostoKey]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[CostoKey-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[DepartamentoKey-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DepartamentoKey-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[DepartamentoKey]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[DepartamentoKey-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[ViviendaKey-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ViviendaKey-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[ViviendaKey]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[ViviendaKey-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[PersonaKey-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PersonaKey-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[PersonaKey]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[PersonaKey-convert]" />
+                    <inputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].Columns[EVENTO-convert]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="EVENTO-convert"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[EVENTO]"
+                      lineageId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos].Columns[EVENTO-convert]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHAKEY]"
+                      dataType="wstr"
+                      length="100"
+                      name="FECHAKEY" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[CostoKey]"
+                      dataType="wstr"
+                      length="100"
+                      name="CostoKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[DepartamentoKey]"
+                      dataType="wstr"
+                      length="100"
+                      name="DepartamentoKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[ViviendaKey]"
+                      dataType="wstr"
+                      length="100"
+                      name="ViviendaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[PersonaKey]"
+                      dataType="wstr"
+                      length="100"
+                      name="PersonaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB].ExternalColumns[EVENTO]"
+                      dataType="wstr"
+                      length="100"
+                      name="EVENTO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="9226"
+              name="Origen de archivo plano Emergencias"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos 7]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 7]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[FECHAKEY-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[FECHAKEY]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[FECHAKEY-source]"
+                      name="FECHAKEY-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[CostoKey-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[CostoKey]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[CostoKey-source]"
+                      name="CostoKey-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[DepartamentoKey-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[DepartamentoKey]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[DepartamentoKey-source]"
+                      name="DepartamentoKey-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[ViviendaKey-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[ViviendaKey]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[ViviendaKey-source]"
+                      name="ViviendaKey-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[PersonaKey]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[PersonaKey-source]"
+                      name="PersonaKey-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[EVENTO-source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[EVENTO]"
+                      length="50"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].Columns[EVENTO-source]"
+                      name="EVENTO-source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[FECHAKEY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FECHAKEY" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[CostoKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CostoKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[DepartamentoKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DepartamentoKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[ViviendaKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ViviendaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[PersonaKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PersonaKey" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano].ExternalColumns[EVENTO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EVENTO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL - Emergencia.Paths[Salida de conversión de datos]"
+              endId="Package\ETL - Emergencia\Destino de OLE DB Emergencia.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\ETL - Emergencia\Conversión de datos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\ETL - Emergencia.Paths[Salida de origen de archivo plano]"
+              endId="Package\ETL - Emergencia\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de archivo plano"
+              startId="Package\ETL - Emergencia\Origen de archivo plano Emergencias.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2682,7 +3486,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F37DCC72-768E-4C0C-8CE9-25E31EA762E7}"
-          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda;&#xA;DELETE FROM CostosObra;&#xA;DELETE FROM Persona" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DELETE FROM Departamento;&#xA;DELETE FROM Vivienda;&#xA;DELETE FROM CostosObra;&#xA;DELETE FROM Persona;&#xA;DELETE FROM Emergencia" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -2719,6 +3523,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 3"
       DTS:To="Package\ETL - Persona" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{39B8ABB2-B296-4507-B91A-4FA14F5756F3}"
+      DTS:From="Package\Tarea Limpar tablas SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\ETL - Emergencia" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -2880,6 +3692,44 @@
                     Point3="68.9,79.7062634989201" />
                   <mssgle:LineSegment
                     End="68.9,246.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162,42"
+          Id="Package\ETL - Emergencia"
+          TopLeft="487,162" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="332.833333333333,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="235.166666666667,68"
+              Start="0,0"
+              End="235.166666666667,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0251256281407" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0251256281407"
+                    Point2="0,18.0251256281407"
+                    Point3="4,18.0251256281407" />
+                  <mssgle:LineSegment
+                    End="231.166666666667,18.0251256281407" />
+                  <mssgle:CubicBezierSegment
+                    Point1="231.166666666667,18.0251256281407"
+                    Point2="235.166666666667,18.0251256281407"
+                    Point3="235.166666666667,22.0251256281407" />
+                  <mssgle:LineSegment
+                    End="235.166666666667,60.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3248,6 +4098,107 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\ETL - Persona\Destino de OLE DB Persona">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ETL - Emergencia">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="254,42"
+          Id="Package\ETL - Emergencia\Origen de archivo plano Emergencias"
+          TopLeft="436,96" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\ETL - Emergencia\Conversión de datos"
+          TopLeft="422,196" />
+        <EdgeLayout
+          Id="Package\ETL - Emergencia.Paths[Salida de origen de archivo plano]"
+          TopLeft="563,138">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-53.5,58"
+              Start="0,0"
+              End="-53.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-49.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-49.5,29"
+                    Point2="-53.5,29"
+                    Point3="-53.5,33" />
+                  <mssgle:LineSegment
+                    End="-53.5,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="226,42"
+          Id="Package\ETL - Emergencia\Destino de OLE DB Emergencia"
+          TopLeft="450,296" />
+        <EdgeLayout
+          Id="Package\ETL - Emergencia.Paths[Salida de conversión de datos]"
+          TopLeft="509.5,238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="53.5,58"
+              Start="0,0"
+              End="53.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="4,29" />
+                  <mssgle:LineSegment
+                    End="49.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.5,29"
+                    Point2="53.5,29"
+                    Point3="53.5,33" />
+                  <mssgle:LineSegment
+                    End="53.5,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL - Emergencia\Destino de OLE DB Emergencia">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
